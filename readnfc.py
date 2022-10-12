@@ -175,6 +175,7 @@ try:
     r = requests.get(usersettings.sonoshttpaddress)
 except:
     print ("... but API did not respond. This could be a temporary error so I won't quit, but carry on to see if it fixes itself")
+    exit(0)
 
 if r.status_code == 200:
     print ("... and API responding")
