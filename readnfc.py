@@ -61,7 +61,7 @@ def touched(tag):
 
             if receivedtext_lower.startswith ('playlist:'):
                 servicetype = "playlist"
-                sonosinstruction = 'playlist/' + receivedtext[10:]
+                sonosinstruction = 'playlist/' + receivedtext[9:]
 
             #check if a Sonos "command" or room change read from NFC
             if receivedtext_lower.startswith ('command'):
